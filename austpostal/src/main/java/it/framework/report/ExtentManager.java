@@ -4,9 +4,6 @@ package main.java.it.framework.report;
 import com.relevantcodes.extentreports.ExtentReports;
 
 
-
-
-
 public class ExtentManager {
 
 	public static ExtentReports extent; 
@@ -32,8 +29,7 @@ public class ExtentManager {
 		if (extent == null) {
 			extent = new ExtentReports(reportFileName, true);
 
-			extent
-			.addSystemInfo("Selenium Version", "3.149.59");
+			extent.addSystemInfo("Selenium Version", "3.149.59");
 
 
 		}
